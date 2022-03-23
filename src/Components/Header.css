@@ -1,0 +1,88 @@
+.logo {
+  width: 30px;
+}
+.header {
+  height: 12vh;
+
+  width: 100%;
+}
+.nav {
+  height: 10vh;
+
+  margin: 0 20px;
+
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  flex: auto;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.199);
+  color: balck;
+}
+
+.add-icon {
+  margin: 0 10px;
+}
+.icon {
+  cursor: pointer;
+}
+.popup {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 50%;
+  height: 50vh;
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+ 
+
+.popup button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17c3b2;
+}
+
+.popup button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.popup button:hover::before {
+  width: 105%;
+}
+
+.popup button:hover {
+  color: #111;
+}
+.popup input {
+  color: #17c3b2;
+}

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.image{
+  padding: 0 10px 10px;
+  width:  300px;
+  height: 400px;
+  border-radius: 30px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.image.opened{
+ 
+}
+
+/*  Animation */
+.gallery img{  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
