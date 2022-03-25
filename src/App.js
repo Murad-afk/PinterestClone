@@ -9,7 +9,7 @@ function App() {
   const [open, setOpen] = useState(false);
 
   const getGallery = async() =>{
-    const galleryRes = await axios.get('http://localhost:5000/gallery')
+    const galleryRes = await axios.get('https://muradspinterest.herokuapp.com/gallery')
     setGallery(galleryRes.data)
   }
 

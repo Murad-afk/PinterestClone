@@ -39,7 +39,7 @@ const Header = ({ getGallery,gallery, setGallery, open,setOpen }) => {
         image: imageUrl,
       };
 
-      await axios.post("http://localhost:5000/add", submitPost);
+      await axios.post("https://muradspinterest.herokuapp.com/add", submitPost);
       getGallery()
       setImage('')
     } catch (err) {
